@@ -1,3 +1,6 @@
+#ifndef MAIN_H
+#define MAIN_H
+
 #include <stdio.h>
 #include <limits.h>
 #include <stdio.h>
@@ -20,6 +23,7 @@
 #define F_ZERO 4
 #define F_HASH 8
 #define F_SPACE 16
+<<<<<<< HEAD
 
 /**
  * struct fmt - Struct op
@@ -27,13 +31,19 @@
  * @fmt: The format.
  * @fn: The function associated.
  */
+=======
+>>>>>>> creation: creation get_flag get_percision
 
 
 
 struct fmt
 {
         char fmt;
+<<<<<<< HEAD
         int (fn)(va_list, int, int, int, int);
+=======
+        int (*fn)(va_list, char[], int, int, int, int);
+>>>>>>> creation: creation get_flag get_percision
 
 };
 
@@ -47,7 +57,7 @@ struct fmt
 
 typedef struct fmt fmt_t;
 
-
+int _printf(const char *format, ...);
 
 
 
@@ -71,7 +81,7 @@ int print_string(va_list types, int flags, int width, int precision, int size);
 int print_percent(va_list types, int flags, int width,
 int precision, int size);
 
-int _printf(const charformat, ...);
+
 
 
 

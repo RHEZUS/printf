@@ -18,7 +18,10 @@ int get_flag(const char *format, int *i)
 	for (curr_i = *i + 1; format[curr_i] != '\0'; curr_i++)
 	{
 		for (j = 0; flag_ch[j] != '\0'; j++)
+<<<<<<< HEAD
 
+=======
+>>>>>>> creation: creation get_flag get_percision
 			if (format[curr_i] == flag_ch[j])
 			{
 				flag = flag_arr[j];
