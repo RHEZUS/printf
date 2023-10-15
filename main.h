@@ -1,6 +1,3 @@
-#ifndef MAIN_H
-#define MAIN_H
-
 #include <stdio.h>
 #include <limits.h>
 #include <stdio.h>
@@ -31,10 +28,13 @@
  * @fn: The function associated.
  */
 
+
+
 struct fmt
 {
-	char fmt;
-	int (*fn)(va_list, int, int, int, int);
+        char fmt;
+        int (fn)(va_list, int, int, int, int);
+
 };
 
 
@@ -48,7 +48,8 @@ struct fmt
 typedef struct fmt fmt_t;
 
 
-int _printf(const char *format, ...);
+
+
 
 
 /* Functions to handle specificities*/
@@ -69,6 +70,8 @@ int print_char(va_list types, int flags, int width, int precision, int size);
 int print_string(va_list types, int flags, int width, int precision, int size);
 int print_percent(va_list types, int flags, int width,
 int precision, int size);
+
+int _printf(const charformat, ...);
 
 
 

@@ -8,6 +8,8 @@
  */
 int get_flag(const char *format, int *i)
 {
+	/* - + 0 # ' ' */
+	/* 1 2 4 8  16 */
 	int j, curr_i;
 	int flag = 0;
 	const char flag_ch[] = {'-', '+', '0', '#', ' ', '\0'};
@@ -16,6 +18,7 @@ int get_flag(const char *format, int *i)
 	for (curr_i = *i + 1; format[curr_i] != '\0'; curr_i++)
 	{
 		for (j = 0; flag_ch[j] != '\0'; j++)
+
 			if (format[curr_i] == flag_ch[j])
 			{
 				flag = flag_arr[j];
