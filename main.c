@@ -21,5 +21,3 @@ int main(void)
 	printf("Length:[%d, %i]\n", len2, len2);
 	return (0);
 }
-/*Collaborators: Juskins & MCCHANCE */
-
