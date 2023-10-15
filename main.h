@@ -8,6 +8,10 @@
 #include <stdarg.h>
 #include <unistd.h>
 
+/* SIZES */
+#define S_LONG 2
+#define S_SHORT 1
+
 
 struct fmt
 {
@@ -18,8 +22,17 @@ struct fmt
 typedef struct fmt fmt_t;
 
 
-
 int _printf(const char *format, ...);
+
+
+/* Functions to handle specificities*/
+
+int get_width(const char* format, int *i);
+int get_size(const char *format, int *i);
+
+
+
+
 int handle_print(const char *frmt, int flags, int width, int precision, int size);
 
 #endif

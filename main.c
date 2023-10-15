@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	printf("%d\n", _printf(" "));
+	printf(" %d\n", _printf("This is a %ld example with width."));
 	printf("Waiting for your work\n");
 	return (0);
 }
