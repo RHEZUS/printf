@@ -8,6 +8,7 @@
 #include <stdarg.h>
 #include <unistd.h>
 
+
 struct fmt
 {
 	char fmt;
@@ -16,7 +17,9 @@ struct fmt
 
 typedef struct fmt fmt_t;
 
-int _printf(const char *format, ...);
 
+
+int _printf(const char *format, ...);
+int handle_print(const char *frmt, int flags, int width, int precision, int size);
 
 #endif
