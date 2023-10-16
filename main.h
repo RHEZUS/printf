@@ -69,7 +69,7 @@ int print_char(va_list types, int flags, int width, int precision, int size);
 int print_string(va_list types, int flags, int width, int precision, int size);
 int print_percent(va_list types, int flags, int width,
 int precision, int size);
-
+int print_binary(va_list types, int flags, int width, int precision, int size);
 
 
 

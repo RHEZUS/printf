@@ -10,6 +10,7 @@ int flags, int width, int precision, int size)
 	int i, printed_chars = -1;
 	fmt_t fmt_types[] = {
 		{'c', print_char}, {'s', print_string}, {'%', print_percent},
+		{'b', print_binary},
 		/*{'i', print_int}, {'d', print_int}, {'b', print_binary},*/
 		/*{'u', print_unsigned}, {'o', print_octal}, {'x', print_hexad    ecimal},*/
 		/*{'X', print_hexa_upper}, {'p', print_pointer},*/
