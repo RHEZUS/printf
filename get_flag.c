@@ -32,4 +32,3 @@ int get_flags(const char *format, int *i)
 
 	return (flags);
 }
-/* Collaborators: Juskins and MCCHANCE  */
